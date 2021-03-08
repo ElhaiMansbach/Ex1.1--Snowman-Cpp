@@ -43,4 +43,4 @@ https://codegolf.stackexchange.com/q/49671/12019
 ולכן כל שינוי שתעשו בקבצים הקיימים יימחק.
 
 </div>
-![image](https://tenor.com/view/snowman-gif-18033934)
+![](https://media.tenor.com/images/ca9a0ca5b2f6c3904f205f50e5009b87/tenor.gif)
