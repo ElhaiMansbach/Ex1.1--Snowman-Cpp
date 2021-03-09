@@ -82,6 +82,7 @@ TEST_CASE("check base") {
 }
 
 //Bad snowman code
+
 TEST_CASE("More than 8 letters"){
     CHECK_THROWS(snowman(111111111));
     CHECK_THROWS(snowman(222222222));
@@ -95,27 +96,32 @@ TEST_CASE("Less than 8 letters"){
     CHECK_THROWS(snowman(1111111));
     CHECK_THROWS(snowman(222222));
     CHECK_THROWS(snowman(33333));
-    CHECK_THROWS(snowman(444));
+    CHECK_THROWS(snowman(1234));
+    CHECK_THROWS(snowman(123));
     CHECK_THROWS(snowman(12));
     CHECK_THROWS(snowman(1));
 }
 
 TEST_CASE("Negative numbers"){ 
-    CHECK_THROWS(snowman(1111-1111));
-    CHECK_THROWS(snowman(2222222-2));
-    CHECK_THROWS(snowman(3-3333333));
-    CHECK_THROWS(snowman(-44444444));
-    CHECK_THROWS(snowman(12-234-34));
-    CHECK_THROWS(snowman(1-223-4-3-4));
+    CHECK_THROWS(snowman(1223344-1));
+    CHECK_THROWS(snowman(123412-34));
+    CHECK_THROWS(snowman(11111-111));
+    CHECK_THROWS(snowman(2222-2222));
+    CHECK_THROWS(snowman(333-33333));
+    CHECK_THROWS(snowman(44-444444));
+    CHECK_THROWS(snowman(1-3223434));
+    CHECK_THROWS(snowman(-14223434));
 }
 
 TEST_CASE("Invalid options") {
     CHECK_THROWS(snowman(11111115));
-    CHECK_THROWS(snowman(22222922));
-    CHECK_THROWS(snowman(63333333));
-    CHECK_THROWS(snowman(04444444));
-    CHECK_THROWS(snowman(12134115));
-    CHECK_THROWS(snowman(44444449));
+    CHECK_THROWS(snowman(22222262));
+    CHECK_THROWS(snowman(33333733));
+    CHECK_THROWS(snowman(44448444));
+    CHECK_THROWS(snowman(12392312));
+    CHECK_THROWS(snowman(43014321));
+    CHECK_THROWS(snowman(16312323));
+    CHECK_THROWS(snowman(02342312));
 }
     
 
